@@ -1,0 +1,76 @@
+@import '~style/helpers';
+
+/*----- Week View Container style (with background image) ------*/
+
+.weekView {
+	position: absolute;
+	width: 375px;
+	height: 603px;
+	margin-top: 64px;
+	margin-left: 0px;
+	flex-direction: row;
+ 	background-image: url('../../assets/backgrounds/weekBG.png'); 
+	z-index: 0;
+}
+
+/*------------------------------*/
+
+/*----- Title/Date label styles ------*/
+
+.weekAheadTitle {
+	position: absolute;
+	padding-top: 10px;
+	margin-left: 230px;
+	display: flex;
+	z-index: 3;
+	font-weight: bold;
+	color: black;
+}
+
+.weekCurrentDate {
+	height: 20px;
+	width: 150px;
+	margin-top: 15px;
+	margin-left: 70px;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: bottom;
+	color: #7B86A5;
+}
+
+/*------------------------------*/
+
+/*----- Day 1-7 data styles ------*/
+
+.day1Title {
+	color: white;
+	margin-left: -150px;
+	margin-top: 55px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.day2OnwardsTitle {
+	color: white;
+	margin-left: -150px;
+	margin-top: 39px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.amConditions {
+	position: absolute;
+	width: 56px;
+	height: 40px;
+	margin-top: -34px;
+	margin-left: 335px;
+}
+
+.pmConditions {
+	position: absolute;
+	width: 56px;
+	height: 40px;
+	margin-top: -34px;
+	margin-left: 400px;
+}
+

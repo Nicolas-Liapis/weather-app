@@ -1,0 +1,166 @@
+@import '~style/helpers';
+
+.iphoneContainer { 
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+	height: 667px;
+	text-align: center;
+	padding-top: 0;
+	margin: 0 auto;
+	
+}
+
+.containerLeft {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	margin-bottom: 0px;
+	margin-left: -375px; 
+	overflow: hidden; 
+	width: 375px;
+	height: 667px;
+}
+
+.containerCenter {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	margin-bottom: 0px;
+	overflow: hidden; 
+	width: 375px;
+	height: 667px;
+}
+
+.containerRight {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0px;
+	overflow: hidden;
+	margin-left: 375px;
+	width: 375px;
+	height: 667px;
+}
+
+.navBar {
+	position: absolute;
+	width: 375px;
+	height: 64px;
+	background-color: #80B0E0;
+	z-index: 1;
+}
+
+.appTitle {
+	margin-top: 25px;
+	margin-left: 40px;
+	font-size: 25px;
+	font-family: -apple-system;
+	font-weight: bold;
+	color: white;
+}
+
+.statusBar {
+	position: absolute;
+	width: 364px;
+	height: 12px;
+	background-image: url('../../assets/backgrounds/statusBar.png');
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.clock {
+	position: absolute;
+	width: 50px;
+	height: 10px;
+	color: black;
+	font-size: 14px;
+	margin-top: -50px;
+	margin-left: 166px;
+	z-index: 2;
+}
+
+
+.buttonUser {
+	display: flex;
+	background-image: url('../../assets/buttons/buttonUser.png');
+	width: 28px;
+	height: 28px;
+	float: right;
+	margin-right: 10px;
+}
+
+.container mainButton {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  display: block;
+  background: #6DA4CC;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.swipeNavIndicatorLeft {
+	position: absolute;
+	width: 26px;
+	height: 9px;
+	background-image: url('../../assets/navElements/swipeNavLeft.png');
+	margin-left: 176px;
+	margin-top: 255px;
+}
+
+.swipeNavIndicatorRight {
+	position: absolute;
+	width: 26px;
+	height: 9px;
+	background-image: url('../../assets/navElements/swipeNavRight.png');
+	margin-left: 176px;
+	margin-top: 75px;
+}
+
+
+
+
+
+
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;	
+}
+.conditions {
+	flex: 1;
+	font-size: 1em; 
+}
+
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}

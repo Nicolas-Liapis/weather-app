@@ -1,0 +1,122 @@
+@import '~style/helpers';
+
+.pmSectionHide {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/pmBG.png');
+	width: 375px;
+	height: 284px;
+	margin-top: 383px; 
+	position: absolute;
+	overflow: hidden;
+}
+
+.pmSectionShow {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/pmBG.png');
+	width: 375px;
+	height: 284px;
+	margin-top: 574px; /* 574px to expose details, 383px to hide */
+	position: absolute;
+	overflow: hidden;
+}
+
+
+.pmSnapshot {
+	position: absolute;
+	height: 240px;
+	width: 100%;
+	/* background-color: red; */
+}
+
+.pmSplitBar {
+	display: flex;
+	flex-direction: row;
+	width: 267px;
+	height: 20px;
+	margin-left: 55px;
+	/* background-color: green; */
+}
+.pmLabel {
+	width: 40px;
+	height: 20px;
+	color: white;
+	/* background-color: yellow; */
+}
+
+.pmArrowUp {
+	width: 20px;
+	height: 20px;
+	margin-left: 205px;
+	margin-top: 3px;
+	background-image: url('../../assets/buttons/pmArrowUp.png');
+	/* background-color: blue; */
+}
+
+.pmArrowDown {
+	width: 20px;
+	height: 20px;
+	margin-left: 205px;
+	margin-top: 3px;
+	background-image: url('../../assets/buttons/pmArrowDown.png');
+	/* background-color: blue; */
+}
+
+.conditionsPM {
+	width: 90px;
+	height: 55px;
+	/* background-color: red; */
+	margin-left: 175px;
+	background-image: url('../../assets/weatherIcons/heavyRainLarge.png');
+}
+
+.temperaturePM {
+	/* background-color: red; */
+	width: 50px;
+	height: 40px;
+	font-size: 30px;
+	color: white;
+	margin-left: 135px;
+	margin-top: 0px;
+}
+
+.pmAccessoriesBG {
+	display: flex;
+	flex-direction: row;
+	width: 251px;
+	height: 73px;
+	background-image: url('../../assets/accessoriesIcons/symbolBG.png');
+	/* background-color: blue; */
+	margin: 50px auto;
+}
+
+.overlayOn {
+position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(150, 190, 229, 1), rgba(70, 73, 97, 0.72));
+}
+
+.overlayOff {
+	
+}
+
+.splitLine {
+	position: absolute;
+	margin-top: -5px;
+	width: 375px;
+	height: 11px;
+	background-image: url('../../assets/navElements/splitLine.png');
+}
+
+.pmDetails {
+	color: white;
+	background-color: #465269; 
+	z-index: 0; 
+	position: absolute;
+	height: 192px;
+	margin-top: 191px;
+	width: 375px;
+}
+

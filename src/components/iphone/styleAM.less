@@ -1,0 +1,146 @@
+@import '~style/helpers';
+
+.currentDate {
+	position: absolute;
+	padding-top: 50px;
+	display: flex;
+	z-index: 3;
+}
+
+.amHeaderDay {
+	width: 70px;
+	height: 30px;
+	padding-top: 20px;
+	margin-left: -130px;
+	font-weight: bold;
+	color: #383838;
+}
+
+.amHeaderDate {
+	height: 20px;
+	width: 150px;
+	margin-top: 24px;
+	margin-left: 2px;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: bottom;
+	color: #7B86A5;
+	/* background-color: blue; */
+}
+
+
+.amSectionHide {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/amBG.png');
+	width: 375px;
+	height: 319px;
+	margin-top: 64px; 
+	position: absolute;
+}
+
+.amSectionShow {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/amBG.png');
+	width: 375px;
+	height: 319px;
+	margin-top: -128px; 
+	position: absolute;
+}
+
+.amAccessoriesBG {
+	display: flex;
+	flex-direction: row;
+	width: 251px;
+	height: 73px;
+	background-image: url('../../assets/accessoriesIcons/symbolBG.png');
+	/* background-color: blue; */
+	margin: 0 auto;
+}
+
+.amSnapshot {
+	position: absolute;
+	bottom: 0;
+	height: 250px;
+	width: 100%;
+	/* background-color: red; */
+}
+
+.temperatureAM {
+	/* background-color: red; */
+	width: 50px;
+	height: 40px;
+	font-size: 30px;
+	color: black;
+	margin-left: 200px;
+	margin-top: 60px;
+}
+
+.conditionsAM {
+	width: 90px;
+	height: 55px;
+	/* background-color: red; */
+	margin-left: 135px;
+	background-image: url('../../assets/weatherIcons/cloudyWithSpellsLarge.png');
+}
+
+.amSplitBar {
+	display: flex;
+	flex-direction: row;
+	width: 267px;
+	height: 20px;
+	margin-left: 55px;
+	/* background-color: green; */
+}
+.amLabel {
+	width: 40px;
+	height: 20px;
+	color: #383838;
+	/* background-color: yellow; */
+}
+
+.amArrowUp {
+	width: 20px;
+	height: 20px;
+	margin-left: 205px;
+	background-image: url('../../assets/buttons/amArrowUp.png');
+	/* background-color: blue; */
+}
+
+.amArrowDown {
+	width: 20px;
+	height: 20px;
+	margin-left: 205px;
+	background-image: url('../../assets/buttons/amArrowDown.png');
+	/* background-color: blue; */
+}
+
+.overlayOn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(70, 82, 105, 0.75), rgba(70, 82, 105, 1));
+}
+
+.overlayOff {
+	
+}
+
+.splitLine {
+	position: absolute;
+	margin-top: 313px;
+	width: 375px;
+	height: 11px;
+	background-image: url('../../assets/navElements/splitLine.png');
+}
+
+.amDetails {
+	
+	background-color: #96BEE5;
+	z-index: 0; 
+	position: absolute;
+	height: 191px;
+	margin-top: 383px;
+	width: 375px;
+}

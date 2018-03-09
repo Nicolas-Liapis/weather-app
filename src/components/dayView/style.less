@@ -1,0 +1,538 @@
+@import '~style/helpers';
+
+/* --- Day View container --- */
+
+.dayView {
+	position: absolute;
+  	width: 375px;
+  	height: 603px;
+  	margin-top: 64px;
+  	flex-direction: row;
+}
+
+/* -------------------------- */
+
+/* --- Day/Date light/dark styles --- */
+
+.headerDayDark {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	padding-top: 10px;
+	margin-left: 5px;
+	font-weight: bold;
+	color: #383838;
+	z-index: 2;
+}
+
+.headerDayLight {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	padding-top: 10px;
+	margin-left: 5px;
+	font-weight: bold;
+	color: white;
+	z-index: 2;
+}
+
+.headerDateDark {
+	height: 20px;
+	width: 150px;
+	margin-top: -15px;
+	margin-left: 65px;
+	font-size: 12px;
+	text-align: left;
+	color: #7B86A5;
+	z-index: 2;
+}
+
+.headerDateLight {
+	height: 20px;
+	width: 150px;
+	margin-top: -15px;
+	margin-left: 65px;
+	font-size: 12px;
+	text-align: left;
+	color: #FAFAFA;
+	z-index: 2;
+}
+
+/* -------------------------- */
+
+/* ------ hourly breakdown styles -------- */
+
+.pmDetails {
+	color: white;
+	background-color: #465269; 
+	z-index: 0; 
+	position: absolute;
+	height: 191px;
+	margin-top: 128px;
+	width: 375px;
+}
+
+.amDetails {
+	color: black;
+	background-color: #96BEE5;
+	z-index: 0; 
+	position: absolute;
+	height: 191px;
+	margin-top: 319px;
+	width: 375px;
+}
+
+.cell1 {
+	position: absolute;
+	width: 125px;
+	height: 192px;
+	margin-left: 17px;
+}
+
+.cell2 {
+	position: absolute;
+	width: 125px;
+	height: 192px;	
+	margin-left: 125px;
+}
+
+.cell3 {
+	position: absolute;
+	width: 125px;
+	height: 192px;
+	margin-left: 233px;
+}
+
+.cellTime {
+	position: relative;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.cellPrecipitationIcon {
+	position: absolute;
+	background-image: url('../../assets/weatherDetailIcons/precipitationIcon.png');
+	width: 16px;
+	height: 18px;
+	margin-top: 5px;
+	margin-left: 40px;
+}
+
+.cellPrecipitation {
+	/* position: absolute; */
+	width: 40px;
+	height: 18px;
+	margin-top: 1px;
+	margin-left: 17px;
+}
+
+.cellWindIcon {
+	position: absolute;
+	background-image: url('../../assets/weatherDetailIcons/windIcon.png');
+	width: 16px;
+	height: 11px;
+	margin-top: 39px;
+	margin-left: 48px;
+}
+
+.cellWind {
+	position: absolute;
+	width: 40px;
+	height: 18px;
+	margin-top: 35px;
+	margin-left: 55px;
+}
+
+.cellTemperatureIcon {
+	position: absolute;
+	background-image: url('../../assets/weatherDetailIcons/thermometerIcon.png');
+	width: 7px;
+	height: 16px;
+	margin-top: 68px;
+	margin-left: 50px;
+}
+
+.cellTemperature {
+	position: absolute;
+	width: 40px;
+	height: 18px;
+	margin-top: 67px;
+	margin-left: 55px;
+}
+
+.dividerLine1 {
+	position: absolute;
+	/* background-color: rgba(255, 255, 255, 0.58); */
+	width: 1px;
+	height: 172px;
+	margin-top: 10px;
+	margin-left: 135px;
+}
+
+.dividerLine2 {
+	position: absolute;
+	/* background-color: rgba(255, 255, 255, 0.58); */
+	width: 1px;
+	height: 172px;
+	margin-top: 10px;
+	margin-left: 240px;	
+}
+
+/* -------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------- AM Section styles(with background image) ------- */
+
+.amSection {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 375px;
+	height: 319px;
+	margin-top: 0px; 
+	position: absolute;
+	transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.amSectionShow {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 375px;
+	height: 319px;
+	margin-top: -191px; 
+	position: absolute;
+	transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.amAccessories {
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 60px;
+}
+
+.amTemperature {
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	font-size: 30px;
+	color: black;
+	margin-left: 165px;
+	margin-top: 210px;
+}
+
+.amConditions {
+	position: absolute;
+	width: 90px;
+	height: 55px;
+	margin-top: 245px;
+	margin-left: 110px;
+}
+
+.amLocation {
+	position: absolute;
+	width: 100px;
+	height: 55px;
+	margin-top: 260px;
+	margin-left: 200px;
+	color: black;
+	font-size: 15px;
+	word-wrap: break-word;
+}
+
+
+.amSplitBar {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 267px;
+	height: 20px;
+	margin-top: 295px;
+	margin-left: 55px;
+}
+
+.amLabel {
+	position: absolute;
+	width: 40px;
+	height: 20px;
+	color: #383838;
+}
+
+.amTomorrowLabelOn {
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 60px;
+	width: 100px;
+	height: 30px;
+	background-color: #80B0E0;	
+	line-height: 30px;
+	border-radius: 8px;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.amTomorrowLabelOff {
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 60px;
+	width: 100px;
+	height: 30px;
+	background-color: #80B0E0;	
+	line-height: 30px;
+	border-radius: 8px;
+	font-weight: bold;
+	opacity: 0;
+}
+
+.amIndicatorArrowDown {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-left: 240px;
+	margin-bottom: 5px;
+	background-image: url('../../assets/buttons/amArrowDown.png');
+	transform: rotate(0deg);
+	transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.amIndicatorArrowUp {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-left: 240px;
+	margin-bottom: 5px;
+	background-image: url('../../assets/buttons/amArrowDown.png');
+	transform: rotate(180deg);
+	transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.amOverlayOff {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(70, 82, 105, 0.75), rgba(70, 82, 105, 1));
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 0.3s; 
+}
+
+.amOverlayOn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(70, 82, 105, 0.75), rgba(70, 82, 105, 1)); 
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 0.3s; 
+}
+
+
+.amSplitLine {
+	position: absolute;
+	margin-top: 313px;
+	width: 375px;
+	height: 11px;
+	background-image: url('../../assets/navElements/splitLine.png');
+}
+
+.amButton {
+	position: absolute;
+	width: 375px;
+	height: 319px;
+	margin-left: -187px;
+	z-index: 10;
+}
+
+/* -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- PM Section styles (with background image) ---- */
+
+.pmSection {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	width: 375px;
+	height: 284px;
+	margin-top: 319px; 
+	position: absolute;
+	overflow: hidden;
+	transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.pmSectionShow {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	width: 375px;
+	height: 284px;
+	margin-top: 510px; 
+	position: absolute;
+	overflow: hidden;
+	transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.pmAccessories {
+	position: absolute;
+	margin-top: 170px;
+	margin-left: 60px;
+}
+
+.pmSplitLine {
+	position: absolute;
+	margin-top: -5px;
+	width: 375px;
+	height: 11px;
+	background-image: url('../../assets/navElements/splitLine.png');
+	z-index: 1;
+}
+
+.pmSplitBar {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 267px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 55px;
+}
+
+.pmLabel {
+	position: absolute;
+	width: 40px;
+	height: 20px;
+}
+
+.pmIndicatorArrowUp {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-left: 240px;
+	margin-bottom: 5px;
+	background-image: url('../../assets/buttons/pmArrowUp.png');
+ 	transform: rotate(0deg);
+ 	transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.pmIndicatorArrowDown {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-left: 240px;
+	margin-bottom: 5px;
+	background-image: url('../../assets/buttons/pmArrowUp.png');
+ 	transform: rotate(180deg);
+ 	transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.pmLocation {
+	position: absolute;
+	width: 100px;
+	height: 55px;
+	margin-top: 30px;
+	margin-left: 90px;
+	word-wrap: break-word;
+	font-size: 15px;
+}
+
+
+.pmConditions {
+	position: absolute;
+	width: 90px;
+	height: 55px;
+	margin-top: 15px;
+	margin-left: 190px;
+}
+
+.pmTemperature {
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	font-size: 30px;
+	color: black;
+	margin-left: 120px;
+	margin-top: 75px;
+	color: white;
+}
+
+.pmTomorrowLabelOn {
+	position: absolute;
+	margin-top: 90px;
+	margin-left: 220px;
+	width: 100px;
+	height: 30px;
+	background-color: #80B0E0;	
+	line-height: 30px;
+	border-radius: 8px;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.pmTomorrowLabelOff {
+	position: absolute;
+	margin-top: 90px;
+	margin-left: 220px;
+	width: 100px;
+	height: 30px;
+	background-color: #80B0E0;	
+	line-height: 30px;
+	border-radius: 8px;
+	font-weight: bold;
+	opacity: 0;
+}
+
+.pmOverlayOff {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(150, 190, 229, 1), rgba(70, 73, 97, 0.72)); 
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.pmOverlayOn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(150, 190, 229, 1), rgba(70, 73, 97, 0.72));
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 0.3s; 
+}
+
+.pmButton {
+	position: absolute;
+	width: 375px;
+	height: 284px;
+	margin-left: -187px;
+	z-index: 10;
+}
